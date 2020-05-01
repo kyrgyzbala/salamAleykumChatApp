@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Salam Aleykum</string>
+
+    <string name="phone_number">Phone number</string>
+    <string name="sign_in">Sign in</string>
+    <string name="conditions">I have read and I agree with the conditions</string>
+    <string name="resend_code">Resend code</string>
+
+    <string name="doneby">𝒃𝒚 𝑲𝒚𝒓𝒈𝒚𝒛𝑪𝒐𝒅𝒆𝒓</string>
+    <string name="verification_code">Verification code</string>
+    <string name="enter_code_here">Enter code here</string>
+    <string name="verify">Verify</string>
+    <string name="loading">Loading…</string>
+
+
+    <!-- Get string messages from activities and fragments-->
+    <string name="requiredField">This field is required</string>
+    <string name="mustAgree">You must agree with term and conditions of usage</string>
+    <string name="signInSuccessful">Signed in successfully</string>
+    <string name="upload_profile_picture">Upload profile picture</string>
+    <string name="display_name">Display name</string>
+    <string name="status">Status</string>
+    <string name="profile">Profile</string>
+    <string name="uploadPhotoAlert">You want to change/upload profile photo?</string>
+    <string name="yes">Yes</string>
+    <string name="upload">Upload</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="profilePhotoUploaded">Profile picture has been uploaded</string>
+    <string name="profileUpdated">Profile has been updated  successfully!</string>
+    <string name="pleaseUploadPhoto">Please upload profile photo</string>
+    <string name="nameError">Name must contain min 3 and max 20 characters</string>
+    <string name="signOutWarning">Are you sure that you want to sign out from your account?</string>
+    <string name="allUsers">All users</string>
+    <string name="requestSent">Friendship request has been sent successfully</string>
+
+    <string name="default_notification_channel_id">default_notification_channel_id</string>
+
+    <string name="save">Save</string>
+    <string name="add_friend">Add friend</string>
+    <string name="create_new_group">Create new group</string>
+    <string name="sign_out">Sign out</string>
+    <string name="add_to_friend_list">Send friendship request</string>
+    <string name="start_conversation">Start conversation</string>
+    <string name="cancel_request">Cancel request</string>
+    <string name="type_here">Type here....</string>
+    <string name="_12_00">12:00</string>
+    <string name="friend_info">Friend Info</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+
+</resources>

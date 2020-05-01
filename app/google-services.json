@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "407201228626",
+    "firebase_url": "https://chatapp-73e56.firebaseio.com",
+    "project_id": "chatapp-73e56",
+    "storage_bucket": "chatapp-73e56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407201228626:android:ee74efa3dfd7fc6c8a7c8b",
+        "android_client_info": {
+          "package_name": "com.kyrgyzcoder.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407201228626-eg169ahbcapmrb3mppvu213p01rnbdrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFiPGotL2k5iMU_QYtURUd-aXqssusdqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407201228626-eg169ahbcapmrb3mppvu213p01rnbdrp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

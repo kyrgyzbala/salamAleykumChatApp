@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listFriendsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="3dp"
+    android:background="@drawable/rounded_corners1">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgViewListFriends"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/userNameListFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@+id/imgViewListFriends"
+        android:text="@string/loading"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/userStatusListFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameListFriends"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@+id/imgViewListFriends"
+        android:text="@string/loading"
+        android:textColor="@color/turquoiseColor"
+        android:textSize="18sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".friends.FriendInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgViewFriendInfo"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/me" />
+
+            <TextView
+                android:id="@+id/displayNameFriendInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgViewFriendInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:text="@string/loading"
+                android:textColor="@color/turquoiseColor"
+                android:textSize="27sp" />
+
+            <TextView
+                android:id="@+id/statusFriendInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/displayNameFriendInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:text="@string/loading"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/phoneNumberFriendInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/statusFriendInfo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="64dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="64dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center"
+                android:paddingStart="36dp"
+                android:paddingEnd="36dp"
+                android:text="@string/loading"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:id="@+id/writeToFriend"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/phoneNumberFriendInfo"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center"
+                android:text="@string/start_conversation"
+                android:textColor="@color/turquoiseColor"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sendRequest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/phoneNumberFriendInfo"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center"
+                android:text="@string/add_to_friend_list"
+                android:textColor="#0AEF14"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cancelRequest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/phoneNumberFriendInfo"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_textview"
+                android:gravity="center"
+                android:text="@string/cancel_request"
+                android:textColor="#E40D08"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/acceptRequest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/phoneNumberFriendInfo"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center"
+                android:text="@string/accept"
+                android:textColor="#0AEF14"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/declineRequest"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/phoneNumberFriendInfo"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="128dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/background_edit"
+                android:gravity="center"
+                android:text="@string/decline"
+                android:textColor="#E40D08"
+                android:textSize="24sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/pBarFriendInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/semi_gray"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2E2D30</color>
+    <color name="colorPrimaryDark">#2E2D30</color>
+    <color name="colorAccent">#2BFA24</color>
+
+    <color name="backgroundNur">#fff</color>
+    <color name="toolbarBack">#E9ECEF</color>
+    <color name="toolbarBack2">#2668A2</color>
+    <color name="backgroundList">#3B52AF</color>
+    <color name="textColorDark">#000</color>
+
+    <color name="actionBar">#F3ECEC</color>
+    <color name="whatsAppsent">#e2ffc7</color>
+
+    <color name="actionBarStatus">#21303D</color>
+    <color name="turquoiseColor">#1aa399</color>
+
+    <color name="semi_gray">#48796D6D</color>
+</resources>
