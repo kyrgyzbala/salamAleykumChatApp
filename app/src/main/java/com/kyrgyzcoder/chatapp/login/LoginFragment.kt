@@ -159,8 +159,9 @@ class LoginFragment : Fragment() {
 
 
                             val map = mutableMapOf<String, Any>()
-                            val mToken: String = FirebaseInstanceId.getInstance().token!!
-                            map["token"] = mToken
+                            val mToken: String? = FirebaseInstanceId.getInstance().token
+                            if (mToken != null)
+                                map["token"] = mToken
 
                             Log.d(TAG, "signInWithCredential: token is: $mToken")
                             db.collection("fcmTokens").document(user.uid).set(map)
@@ -195,16 +196,16 @@ class LoginFragment : Fragment() {
                                     newMap["isProfileDone"] = false
                                     db.collection("users").document(user.uid)
                                         .set(newMap, SetOptions.merge()).addOnSuccessListener {
-                                        //if profile is not done yet, go to profile activity
-                                        val intent =
-                                            Intent(
-                                                this.requireContext(),
-                                                ProfileActivity::class.java
-                                            )
-                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-                                        requireActivity().finish()
-                                        startActivity(intent)
-                                    }
+                                            //if profile is not done yet, go to profile activity
+                                            val intent =
+                                                Intent(
+                                                    this.requireContext(),
+                                                    ProfileActivity::class.java
+                                                )
+                                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                                            requireActivity().finish()
+                                            startActivity(intent)
+                                        }
                                 }
                         }
                     } else {
@@ -224,13 +225,16 @@ class LoginFragment : Fragment() {
                                 newMap["isProfileDone"] = false
                                 db.collection("users").document(user.uid)
                                     .set(newMap, SetOptions.merge()).addOnSuccessListener {
-                                    //if profile is not done yet, go to profile activity
-                                    val intent =
-                                        Intent(this.requireContext(), ProfileActivity::class.java)
-                                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
-                                    requireActivity().finish()
-                                    startActivity(intent)
-                                }
+                                        //if profile is not done yet, go to profile activity
+                                        val intent =
+                                            Intent(
+                                                this.requireContext(),
+                                                ProfileActivity::class.java
+                                            )
+                                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                                        requireActivity().finish()
+                                        startActivity(intent)
+                                    }
                             }
                     }
                 }

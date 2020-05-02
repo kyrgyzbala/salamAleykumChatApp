@@ -12,6 +12,7 @@ import com.google.firebase.Timestamp
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.firestore.ListenerRegistration
 import com.google.firebase.firestore.SetOptions
 import com.kyrgyzcoder.chatapp.EXTRA_CHAT_REF
 import com.kyrgyzcoder.chatapp.EXTRA_FRIEND_UID
@@ -51,6 +52,7 @@ class FriendInfoActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
 
     private fun handleClicks(uid: String) {
         binder.phoneNumberFriendInfo.setOnClickListener {
@@ -217,6 +219,7 @@ class FriendInfoActivity : AppCompatActivity() {
         Log.d(TAG, "initUI: $uid")
         binder.pBarFriendInfo.visibility = View.VISIBLE
         db.collection("profiles").document(uid).get().addOnSuccessListener {
+
             val profile = it.toObject(Profile::class.java)
             if (profile != null) {
                 Glide.with(binder.root.context).load(profile.photoUrl)

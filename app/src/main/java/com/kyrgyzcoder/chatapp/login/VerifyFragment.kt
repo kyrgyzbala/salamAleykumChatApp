@@ -99,8 +99,9 @@ class VerifyFragment : Fragment() {
                                 }
                         } else {
                             val map = mutableMapOf<String, Any>()
-                            val mToken: String = FirebaseInstanceId.getInstance().token!!
-                            map["token"] = mToken
+                            val mToken = FirebaseInstanceId.getInstance().token
+                            if (mToken != null)
+                                map["token"] = mToken
                             Log.d(TAG, "signInWithCredential: token is: $mToken")
                             db.collection("fcmTokens").document(user.uid).set(map)
                                 .addOnSuccessListener {
